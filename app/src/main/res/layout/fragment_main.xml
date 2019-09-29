@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Для начала работы необходимо зарегистрироваться"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Номер телефона"
+        app:met_floatingLabel="highlight"
+        android:textAlignment="center"
+        app:met_floatingLabelText="Номер телефона"
+        android:inputType="phone" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone_number"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Номер карты"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Номер карты"
+        android:textAlignment="center"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/registration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/card_number"
+        android:text="Регистрация" />
+</RelativeLayout>

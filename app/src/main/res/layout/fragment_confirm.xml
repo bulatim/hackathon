@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтверждение перевода"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/recepient_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Имя получателя"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Имя получателя"
+        android:textAlignment="center"
+        android:inputType="phone" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Сумма перевода"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Сумма перевода"
+        android:textAlignment="center"
+        android:inputType="numberSigned" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Код подтверждения"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Код подтверждения"
+        android:textAlignment="center"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Отправить" />
+</LinearLayout>

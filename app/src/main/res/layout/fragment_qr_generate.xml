@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QR-код сформирован"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Номер телефона"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Номер телефона"
+        android:textAlignment="center"
+        android:enabled="false"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Сумма перевода"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Сумма перевода"
+        android:textAlignment="center"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подтвердить" />
+
+    <ImageView
+        android:id="@+id/qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
